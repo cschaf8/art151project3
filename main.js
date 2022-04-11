@@ -3,6 +3,8 @@
 getImg();
 
 function getImg(){
+    const flares = [];
+
     $.ajax({
         type: 'GET',
         dataType: 'json',
@@ -19,6 +21,7 @@ function getImg(){
 
             for(i = 0; i<length; i++){
                 id = data.responseJSON.at(i).classType;
+                flares[i] = id;
                 console.log(id)
             }
 
@@ -27,10 +30,11 @@ function getImg(){
 
     });
 
+    console.log(flares);
     a = 1;
     b = 10;
     c = 100;
     m = 1000;
     x = 10000;
-    
+
 }
