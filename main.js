@@ -105,20 +105,20 @@ function noteOn(note){
     } 
     if(flaresVal[(note-36)]==100){
         pixelD = 0.05;
-        strength = 105;
+        strength = 95;
         //x=75;
         setup();
         draw();
     }
     if(flaresVal[(note-36)]==1000){ 
-        pixelD = 0.2;
-        strength = 155;
+        pixelD = 0.25;
+        strength = 125;
         //x=125; 
         setup();
         draw();
     }
     if(flaresVal[(note-36)]==10000){
-        pixelD = .6;
+        pixelD = 0.75;
         strength = 255;
         //x=1; 
         setup();
