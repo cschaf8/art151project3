@@ -204,8 +204,8 @@ function draw() {
     for (var i = 0; i < width; i++) {
         for (var j = 0; j < height; j++) {
             var idx = (i + j * width) * 4; 
-            pixels[idx+0] = 255-x;//random(x);//250;
-            pixels[idx+1] = random(255);//random((255-x),x);
+            pixels[idx+0] = 250;
+            pixels[idx+1] = random(255-x);//random((255-x),x);
             pixels[idx+2] = x;
             pixels[idx+3] = strength; 
         }
